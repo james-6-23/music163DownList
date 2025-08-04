@@ -1,0 +1,57 @@
+2025-08-04 20:34:15,666 - INFO - Assets path configured: D:\IDM_downloads\Compressed\DownList-1.0\assets
+2025-08-04 20:34:15,668 - INFO - Starting up TCP server on localhost:13786
+2025-08-04 20:34:15,675 - INFO - Flet app has started...
+2025-08-04 20:34:36,221 - INFO - App URL: tcp://localhost:13786
+2025-08-04 20:34:36,221 - INFO - Starting Flet View app...
+2025-08-04 20:34:36,223 - INFO - Looking for Flet executable at: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:34:36,223 - INFO - Flet View found in: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:34:37,074 - INFO - App session started
+2025-08-04 20:34:55,213 - INFO - Assets path configured: D:\IDM_downloads\Compressed\DownList-1.0\assets
+2025-08-04 20:34:55,214 - INFO - Starting up TCP server on localhost:13862
+2025-08-04 20:34:55,222 - INFO - Flet app has started...
+2025-08-04 20:34:55,226 - INFO - App URL: tcp://localhost:13862
+2025-08-04 20:34:55,226 - INFO - Starting Flet View app...
+2025-08-04 20:34:55,228 - INFO - Looking for Flet executable at: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:34:55,228 - INFO - Flet View found in: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:34:55,971 - INFO - App session started
+2025-08-04 20:40:37,121 - INFO - Assets path configured: D:\IDM_downloads\Compressed\DownList-1.0\assets
+2025-08-04 20:40:37,123 - INFO - Starting up TCP server on localhost:14584
+2025-08-04 20:40:37,130 - INFO - Flet app has started...
+2025-08-04 20:40:37,134 - INFO - App URL: tcp://localhost:14584
+2025-08-04 20:40:37,134 - INFO - Starting Flet View app...
+2025-08-04 20:40:37,136 - INFO - Looking for Flet executable at: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:40:37,136 - INFO - Flet View found in: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:40:37,781 - INFO - App session started
+2025-08-04 20:45:35,640 - INFO - Assets path configured: D:\IDM_downloads\Compressed\DownList-1.0\assets
+2025-08-04 20:45:35,642 - INFO - Starting up TCP server on localhost:2052
+2025-08-04 20:45:35,650 - INFO - Flet app has started...
+2025-08-04 20:45:35,653 - INFO - App URL: tcp://localhost:2052
+2025-08-04 20:45:35,654 - INFO - Starting Flet View app...
+2025-08-04 20:45:35,655 - INFO - Looking for Flet executable at: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:45:35,655 - INFO - Flet View found in: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:45:36,489 - INFO - App session started
+2025-08-04 20:45:53,370 - INFO - Cookie已保存到文件
+2025-08-04 20:46:46,134 - INFO - Assets path configured: D:\IDM_downloads\Compressed\DownList-1.0\assets
+2025-08-04 20:46:46,137 - INFO - Starting up TCP server on localhost:2190
+2025-08-04 20:46:46,147 - INFO - Flet app has started...
+2025-08-04 20:46:46,151 - INFO - App URL: tcp://localhost:2190
+2025-08-04 20:46:46,152 - INFO - Starting Flet View app...
+2025-08-04 20:46:46,153 - INFO - Looking for Flet executable at: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:46:46,153 - INFO - Flet View found in: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:46:46,906 - INFO - App session started
+2025-08-04 20:56:21,609 - INFO - Assets path configured: D:\IDM_downloads\Compressed\DownList-1.0\assets
+2025-08-04 20:56:21,611 - INFO - Starting up TCP server on localhost:3409
+2025-08-04 20:56:21,618 - INFO - Flet app has started...
+2025-08-04 20:56:21,622 - INFO - App URL: tcp://localhost:3409
+2025-08-04 20:56:21,622 - INFO - Starting Flet View app...
+2025-08-04 20:56:21,623 - INFO - Looking for Flet executable at: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:56:21,623 - INFO - Flet View found in: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:56:22,329 - INFO - App session started
+2025-08-04 20:57:59,200 - INFO - Assets path configured: D:\IDM_downloads\Compressed\DownList-1.0\assets
+2025-08-04 20:57:59,202 - INFO - Starting up TCP server on localhost:3759
+2025-08-04 20:57:59,209 - INFO - Flet app has started...
+2025-08-04 20:57:59,213 - INFO - App URL: tcp://localhost:3759
+2025-08-04 20:57:59,213 - INFO - Starting Flet View app...
+2025-08-04 20:57:59,214 - INFO - Looking for Flet executable at: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:57:59,214 - INFO - Flet View found in: D:\ProgramData\anaconda3\envs\env1\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-08-04 20:57:59,895 - INFO - App session started
