@@ -65,7 +65,7 @@ python app.py
 
 如果您不想安装Python环境，可以直接下载并运行打包好的exe文件：
 
-1. 从 [Releases](../../releases) 页面下载最新版本的 `DownList.exe`
+1. 从 [Releases](../../releases) 页面下载最新版本的 `163musicDownList.exe`
 2. 双击运行即可，无需安装任何依赖
 
 **注意**:
