@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![DownList Logo](assets/display.png)
+<img width="1382" height="1039" alt="PixPin_2025-08-05_17-27-20" src="https://github.com/user-attachments/assets/c5441135-0ad5-4cbb-b9e4-db9ea7a70a98" />
+
 
 **现代化的网易云音乐下载器**
 
@@ -31,13 +32,7 @@ DownList 是一个基于 Python 和 Flet 框架开发的现代化网易云音乐
 - ⏸️ **下载控制** - 支持暂停、继续、取消下载
 - 🎯 **元数据嵌入** - 自动添加歌曲信息和封面图片
 
-## 🖼️ 界面预览
 
-### Cookie输入页面
-![Cookie页面](assets/cookie.png)
-
-### 主下载界面
-![主界面](assets/display.png)
 
 ## 🚀 快速开始
 
