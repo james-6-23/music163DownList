@@ -171,6 +171,44 @@ This tool is for educational and research purposes only. Please comply with rele
 - Support genuine music by purchasing official music services
 - Users are responsible for any legal issues arising from the use of this tool
 
+## 🙏 Acknowledgments
+
+This project is based on and improved from [xxxkjing/DownList](https://github.com/xxxkjing/DownList).
+
+### Original Project
+- **Repository**: [https://github.com/xxxkjing/DownList](https://github.com/xxxkjing/DownList)
+- **Original Author**: [@xxxkjing](https://github.com/xxxkjing)
+- **Thanks**: Special thanks to the original author for providing an excellent foundation and creative inspiration
+
+### Major Improvements in This Version
+
+Compared to the original project, this version includes the following significant improvements:
+
+#### 🎨 Complete UI/UX Upgrade
+- **Spotify-style Design**: Modern dark theme interface
+- **Enhanced Button System**: 7 button variants, 4 sizes, intelligent state management
+- **Optimized Window Size**: Adjusted to 1400×1100 for better display
+- **Responsive Layout**: Better cross-platform compatibility and user experience
+
+#### 🏗️ Architecture Refactoring
+- **Modular Design**: Clear code organization (api/core/managers/models/ui/utils)
+- **Enhanced Button System**: Unified button creation and management
+- **Type Safety**: Improved error handling and exception management
+- **Performance Optimization**: More efficient rendering and resource management
+
+#### 🔧 Feature Enhancements
+- **Smart State Management**: Automatic handling of button loading and disabled states
+- **UX Improvements**: Tooltips, help dialogs, status feedback
+- **Better Error Handling**: More user-friendly error messages and recovery
+- **Code Quality**: Better comments, documentation, and maintainability
+
+#### 📚 Documentation Enhancement
+- **Complete User Guide**: Detailed installation and usage instructions
+- **Developer Documentation**: Contributing guide, changelog, API documentation
+- **Project Standards**: Code style, commit conventions, version management
+
+We sincerely thank the original author for their innovative work and hope these improvements bring a better experience to the community.
+
 ## 🤝 Contributing
 
 Issues and Pull Requests are welcome to improve this project!
