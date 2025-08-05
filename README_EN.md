@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![DownList Logo](assets/display.png)
+
 
 **Modern NetEase Cloud Music Downloader**
 
@@ -31,13 +31,6 @@ DownList is a modern NetEase Cloud Music downloader built with Python and Flet f
 - ⏸️ **Download Control** - Support pause, resume, and cancel operations
 - 🎯 **Metadata Embedding** - Automatic song information and cover art embedding
 
-## 🖼️ Screenshots
-
-### Cookie Input Page
-![Cookie Page](assets/cookie.png)
-
-### Main Download Interface
-![Main Interface](assets/display.png)
 
 ## 🚀 Quick Start
 
@@ -69,7 +62,7 @@ python main.py
 
 If you don't want to install Python environment, you can directly download and run the packaged exe file:
 
-1. Download the latest `DownList.exe` from [Releases](../../releases) page
+1. Download the latest `163musicDownList.exe` from [Releases](../../releases) page
 2. Double-click to run, no dependencies required
 
 ## 📋 Usage Guide
