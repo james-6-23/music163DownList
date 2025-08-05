@@ -1,112 +1,236 @@
-# DownList
- 
- 
-> An application to download unlimited amount of music from Netease playlist.
-> 一个可以无限制下载网易云音乐歌单的应用
- 
+# 🎵 DownList
 
-## 界面
+<div align="center">
 
-![](assets/display.png)
+![DownList Logo](assets/display.png)
 
-### 特色
+**现代化的网易云音乐下载器**
 
-**免登录 绕过每月400首额度 直接保存为 `MP3`、`FLAC`格式**
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
+[![Flet](https://img.shields.io/badge/Flet-UI-green.svg)](https://flet.dev/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 开始准备
+[English](README_EN.md) | 简体中文
 
-你需要准备：
+</div>
 
-1. 一台正常的电脑 安装了一个正常的浏览器
-2. 网易云音乐账号（建议用有黑胶VIP的，没有VIP会有歌曲下载不了）
-3. 一个正常的脑子
+## 📖 项目介绍
 
-## 使用方法
+DownList 是一个基于 Python 和 Flet 框架开发的现代化网易云音乐下载器，采用 Spotify 风格的深色主题设计。支持批量下载歌单、多种音质选择、歌词下载等功能，提供直观易用的图形界面。
 
-### 方式一：直接运行（推荐）
+### ✨ 主要特性
 
-1. 运行程序：`python main.py`
+- 🎨 **现代化UI设计** - Spotify风格的深色主题界面
+- 🎵 **歌单批量下载** - 支持网易云音乐歌单链接解析
+- 🎧 **多种音质选择** - 标准/极高/无损/Hi-Res等多种音质
+- 📝 **歌词下载** - 可选择同时下载歌词文件
+- 🚀 **多线程下载** - 支持1-8个并发下载任务
+- 🔍 **歌曲搜索筛选** - 支持按歌曲名、艺术家、专辑搜索
+- ✅ **选择性下载** - 可选择特定歌曲进行下载
+- 📊 **实时进度显示** - 详细的下载进度和速度显示
+- ⏸️ **下载控制** - 支持暂停、继续、取消下载
+- 🎯 **元数据嵌入** - 自动添加歌曲信息和封面图片
 
-2. 在启动页面输入您的网易云音乐 MUSIC_U Cookie：
-   - 打开浏览器，访问 music.163.com 并登录
-   - 按F12打开开发者工具，切换到Application/存储标签
-   - 在Cookies中找到MUSIC_U，复制其值
-   - 将值粘贴到程序的输入框中
+## 🖼️ 界面预览
 
-3. 点击"验证并继续"，程序会自动验证Cookie有效性
+### Cookie输入页面
+![Cookie页面](assets/cookie.png)
 
-4. 验证成功后进入下载页面，填入歌单链接，选择音质和下载目录
+### 主下载界面
+![主界面](assets/display.png)
 
-5. 点击解析歌单，然后开始下载
+## 🚀 快速开始
 
-6. Enjoy :D
+### 环境要求
 
-### 方式二：传统方式
+- Python 3.7 或更高版本
+- Windows/macOS/Linux 操作系统
+- 网络连接（用于下载音乐）
 
-1. 到Release或 [蓝奏云（密码h3bn）](https://xia-jing.lanzoup.com/iRvGh32mio8d)中下载（大小68.9MB）
+### 方式一：直接运行源码
 
-2. 打开网页版，获取并复制网易云音乐的用户Cookie：下图中的`MUSIC_U`
+```bash
+git clone https://github.com/your-username/DownList.git
+cd DownList
+```
 
-   ![](assets/cookie.png)
+#### 2. 安装依赖
 
-3. 下载项目中的cookie.txt演示文件（仅供格式展示），覆盖原来的`MUSIC_U`变量
+```bash
+pip install -r requirements.txt
+```
 
-4. 运行程序，填入歌单链接，点击解析，选择下载音质与下载目录，点击下载
+#### 3. 运行程序
 
+```bash
+python app.py
+```
 
+### 使用可执行文件
 
-## 核心函数
+如果您不想安装Python环境，可以直接下载并运行打包好的exe文件：
 
-### 1. **Cookie 管理**
+1. 从 [Releases](../../releases) 页面下载最新版本的 `DownList.exe`
+2. 双击运行即可，无需安装任何依赖
 
-- **`CookieManager` 类**：负责读取和解析存储在 `cookie.txt` 文件中的 Cookie，用于身份验证。
+**注意**:
+- exe文件已优化至80-120MB，首次启动可能需要5-8秒
+- 如被杀毒软件拦截，请添加到白名单
+- 支持Windows 10/11系统
 
-### 2. **网易云音乐 API 请求**
+## 📋 使用说明
 
-- **`post` 函数**：发送 POST 请求到网易云音乐 API，携带必要的请求头和 Cookie。
-- **`url_v1`、`name_v1` 和 `lyric_v1` 函数**：分别用于获取歌曲的下载链接、歌曲信息和歌词。
+### 1. 获取Cookie
 
-### 3. **下载逻辑**
+1. 打开浏览器，访问 [music.163.com](https://music.163.com) 并登录
+2. 按 F12 打开开发者工具
+3. 切换到 Application/存储 标签
+4. 在 Cookies 中找到 `MUSIC_U`，复制其值
+5. 将值粘贴到程序的Cookie输入框中
 
-- `download_playlist` 方法：主下载逻辑，解析歌单、创建下载目录并循环下载每首歌曲。
-  - **下载控制**：支持暂停、继续和取消下载，使用 `is_paused` 标志控制下载状态。
+### 2. 下载歌曲
 
-### 4. **下载歌曲**
+1. **输入歌单链接**：在程序中粘贴网易云音乐歌单链接
+2. **选择设置**：
+   - 选择音质（标准/极高/无损/Hi-Res等）
+   - 选择是否下载歌词
+   - 设置下载目录
+   - 调整并发下载数量
+3. **解析歌单**：点击"解析歌单"按钮
+4. **选择歌曲**：可以全选或选择特定歌曲
+5. **开始下载**：点击"下载选中"或"下载全部"
 
-- `download_song` 方法：负责下载单首歌曲，包括获取音频 URL、下载音频文件和歌词。
-  - **音频文件下载**：调用 `download_file` 方法，使用 `requests` 库流式下载音频文件，并更新下载进度。
+### 3. 下载控制
 
-### 5. **文件元数据**
+- **暂停/继续**：可以随时暂停或继续下载
+- **取消下载**：停止所有下载任务
+- **实时监控**：查看下载进度、速度和状态
 
-- **`add_metadata` 方法**：在下载完成后，将歌曲的元数据（如标题、艺术家、专辑、封面）嵌入到音频文件中。使用 `mutagen` 库处理不同格式的音频文件（FLAC 和 MP3）。
+## 🏗️ 项目结构
 
-### 6. **用户界面**
+```
+DownList/
+├── api/                    # 网易云音乐API接口
+│   └── netease_api.py
+├── core/                   # 核心下载逻辑
+│   ├── downloader.py
+│   └── metadata.py
+├── managers/               # 管理器模块
+│   ├── cookie_manager.py
+│   └── download_manager.py
+├── models/                 # 数据模型
+│   └── download_task.py
+├── ui/                     # 用户界面
+│   ├── base_ui.py
+│   ├── cookie_ui.py
+│   ├── download_ui.py
+│   └── enhanced_button_system.py
+├── utils/                  # 工具函数
+│   ├── constants.py
+│   └── file_utils.py
+├── assets/                 # 资源文件
+│   ├── cookie.png
+│   └── display.png
+├── app.py                  # 主程序入口
+├── requirements.txt       # 依赖列表
+├── LICENSE                # 开源许可证
+├── README.md              # 中文说明文档
+└── README_EN.md           # 英文说明文档
+```
 
-- 使用 `flet` 库创建用户界面，包括输入框、按钮和进度条，允许用户输入歌单 URL、选择音质、选择下载目录等。
+## ⚙️ 配置说明
 
-### 7. **多线程**
+### 音质选项
 
-- **下载线程**：使用 `threading` 模块在后台处理下载任务，确保界面响应流畅。
+- **标准音质** (128kbps MP3)
+- **极高音质** (320kbps MP3)
+- **无损音质** (FLAC)
+- **Hi-Res** (高解析度音频)
+- **沉浸环绕声** (需要VIP)
+- **高清环绕声** (需要VIP)
+- **超清母带** (需要VIP)
 
-### 8. **日志记录**
+### 并发设置
 
-- 使用 `logging` 模块记录下载过程中的各种信息和错误，便于调试和追踪。
+- 支持 1-8 个并发下载任务
+- 建议根据网络状况调整
+- 过高的并发可能导致限流
 
+## 🔧 开发说明
 
+### 技术栈
 
-## ToDo
+- **Python 3.7+** - 主要开发语言
+- **Flet** - 跨平台UI框架
+- **Requests** - HTTP请求库
+- **Mutagen** - 音频元数据处理
+- **Pillow** - 图像处理
+- **Cryptography** - 加密解密
 
-等到有100个Star再来更新......
+### 架构特点
 
-- [ ] 优化软件体积大小
-- [ ] 优化jy*等格式文件
-- [ ] 优化jy*等格式元数据写入
-- [ ] 实现多线程下载
+- **模块化设计** - 清晰的代码结构和职责分离
+- **异步下载** - 多线程并发下载支持
+- **现代化UI** - Spotify风格的用户界面
+- **错误处理** - 完善的异常处理机制
+- **日志记录** - 详细的运行日志
 
+## 📄 许可证
 
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
-## 备注
+## ⚠️ 免责声明
 
-1. 本项目仅供学习，不为盈利。请不要用于商业用途，或者在咸鱼上转卖，传播等请联系本人，不要随意传播。
-2. 本项目基于 [NeteaseUrl](https://github.com/Suxiaoqinx/Netease_url) ，用AI二次开发 感谢 [Suxiaoqinx大大](https://github.com/Suxiaoqinx) ；以及后面可能不会在这个项目上花太多时间了，欢迎大佬fork过去继续开发
-3. 如果你很闲，你可以来逛一逛[我的博客](https://xia.shfu.cn/)
+本工具仅供学习和研究使用，请遵守相关法律法规：
+
+- 下载的音乐仅供个人学习和欣赏使用
+- 请勿用于商业用途或公开传播
+- 建议支持正版音乐，购买官方音乐服务
+- 使用本工具产生的任何法律问题由用户自行承担
+
+## 📋 版本信息
+
+### 当前版本: v2.0.0
+
+### 更新日志
+
+#### v2.0.0 (2025-01-05)
+- 🎨 全新的 Spotify 风格 UI 设计
+- 🚀 增强的按钮系统和用户体验
+- 📱 优化的窗口尺寸 (1400×1100)
+- 🔧 重构的代码架构，提高维护性
+- 🐛 修复了多个已知问题
+- ⚡ 性能优化和稳定性改进
+
+#### v1.x.x
+- 基础功能实现
+- 网易云音乐歌单下载
+- 多线程下载支持
+- 基础 UI 界面
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request 来改进这个项目！
+
+### 贡献指南
+
+1. Fork 本项目
+2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开一个 Pull Request
+
+## 📞 联系方式
+
+如果您有任何问题或建议，请通过以下方式联系：
+
+- 提交 [Issue](../../issues)
+- 发起 [Discussion](../../discussions)
+
+---
+
+<div align="center">
+
+**如果这个项目对您有帮助，请给它一个 ⭐ Star！**
+
+</div>
